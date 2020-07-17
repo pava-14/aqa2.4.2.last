@@ -14,11 +14,14 @@ plugins {
     id "io.freefair.lombok" version "5.1.0"
 }
 
+
 apply plugin: 'java'
 apply plugin: 'groovy'
 apply plugin: 'ru.alfalab.cucumber-reporting'
 apply plugin: 'ru.alfalab.cucumber-parallel-test'
 apply plugin: 'license'
+
+generateRunner.glue = ["ru.netology.step"]
 
 group 'ru.netology'
 version '1.0-SNAPSHOT'
